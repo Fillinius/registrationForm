@@ -5,6 +5,8 @@ const TextField = ({ label, name, value, type, description, onChange, error, pla
     <div >
       <label htmlFor={name}>{label}</label>
       <input type={type}
+        name={name}
+        id={name}
         value={value}
         description={description}
         onChange={onChange}
