@@ -5,9 +5,17 @@ function App() {
   return (
     <div className="App">
       <header>
-        <nav>
+        <nav className="nav">
           <div>
             <img src={logo} className="nav-logo" alt="logo" />
+          </div>
+          <div className="nav-reg">
+            <a className="nav_reg-btn" href="/signin">
+              Signin
+            </a>
+            <a className="nav_reg-btn" href="singout">
+              Signout
+            </a>
           </div>
         </nav>
       </header>
