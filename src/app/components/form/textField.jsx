@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TextField = ({ label, name, value, type, description, onChange, error, placeholder }) => {
+const TextField = ({ label, name, value, type, description, onChange, placeholder, ...restProp }) => {
   return (
     <div >
       <label htmlFor={name}>{label}</label>
@@ -11,7 +11,7 @@ const TextField = ({ label, name, value, type, description, onChange, error, pla
         description={description}
         onChange={onChange}
         placeholder={placeholder}
-        error={error} />
+        {...restProp} />
     </div>
   );
 }

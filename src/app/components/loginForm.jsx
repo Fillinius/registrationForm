@@ -3,7 +3,8 @@ import TextField from './form/textField';
 import './loginForm.css'
 
 const LoginForm = () => {
-  const [data, setData] = useState({ email: '', password: '' })
+  const initialStateLogin = { email: '', password: '' }
+  const [data, setData] = useState(initialStateLogin)
 
   const handleChange = ({ target }) => {
     setData((prev) => ({
@@ -30,7 +31,7 @@ const LoginForm = () => {
           description='Ваш email адрес'
           placeholder='example@example.ru'
           onChange={handleChange}
-        // error='' 
+
         />
         <TextField
           label="Password "
